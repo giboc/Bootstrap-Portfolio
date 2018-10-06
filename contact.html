@@ -5,34 +5,47 @@
         <style>
             body{
                 font-family: "Metal Mania";
-                
+                font-size: 22px
             }
         
         </style>
     </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
+    <body class = "bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </nav>    
-        <!-- Add navbar later. -->
+
 
         <div class = "container">
-            <div class = "row">
-                <p> This is a test</p>
-            </div>
-        </div>
+                <div class = "row text-warning">
+                    <h1>Contact me</h1>
+                </div>
+                <form class="bg-secondary text-warning p-3 pr-4">
+                    <div class="form-group ml-3">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                     <div class="form-group ml-3">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group ml-3">
+                        <label for="msg">Message:</label>
+                        <textarea class="form-control" id="msg" rows = "5"></textarea>
+                    </div>
+                </form>
+                
+    
     </body>
 </html>
